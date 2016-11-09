@@ -7,6 +7,7 @@
     $sessionAccountType = "asfsafdsgsdgsdgsdgsd";
     function encodePassword($password)
     {
+        return $password;
         $stringAdd = "agddfhqqwertyioiupasdfghjklzxcvbnmwetasdfghjklyrutiy";
     
         $lenPass = strlen($password);
@@ -21,7 +22,7 @@
                 $passwordNew = $passwordNew.$number1.$number2;
             else  $passwordNew = $passwordNew.$number2.$number1;
         } 
-        return $passwordNew;
+        //return $passwordNew;
     }
     function getDatabase()
     {
